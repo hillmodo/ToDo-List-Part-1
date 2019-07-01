@@ -27,3 +27,17 @@ header {
     background-color: #f7b733;
     color: white;
 }
+
+.task-complete {
+    text-decoration: line-through;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    float: right;
+}
+
+.complete-btn {
+    background-color: #fc4a1a;
+    border-radius: 5px;
+}

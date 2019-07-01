@@ -12,7 +12,7 @@ interface ToDo {
 })
 export class AppComponent {
   title = 'ToDoListLab1';
-  toDoComponent : ToDo[] = [
+  toDoComponent: ToDo[] = [
     {
       task: "Reserve a Uhaul",
       completed: true,
