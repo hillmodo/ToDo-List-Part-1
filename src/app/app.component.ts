@@ -56,15 +56,19 @@ export class AppComponent {
       task: newTask,
       completed: false,
     }
-    this.toDoComponent.push(input);
+    this.filterToDos.push(input);
   }
 
   removeTask(i){
-    this.toDoComponent.splice(i, 1);
+    this.filterToDos.splice(i, 1);
   }
 
   completeTask(i){
-    this.toDoComponent[i].completed = true;
+    this.filterToDos[i].completed = true;
+  }
+
+  filterTask(event){
+    this.filterToDos = this.toDoComponent.filter(e => e.task.startsWith((<HTMLInputElement>event.target).value))
   }
 
   toDoComponent : ToDo[];
